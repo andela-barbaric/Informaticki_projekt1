@@ -1,0 +1,21 @@
+body {
+  background-color: #fff;
+}
+p {
+  font-size: 18px;
+  text-align: center;
+}
+aside {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#sel1 {
+  width: 25%;
+}
+aside p {
+  font-size: 12px;
+}
+#comment {
+  width: 25%;
+}

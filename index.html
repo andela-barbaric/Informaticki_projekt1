@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <title>Restoran Anna</title>
+    <link rel="icon" href="slike/slika3.jpg">
+  </head>
+
+  <body>
+    <header>
+    
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark" id="nav">
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html">Restoran Anna</a>
+
+      <!-- Toggler/collapsibe Button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="pice.html" >Piće</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hrana.html">Hrana</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html" target="_blank">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+      <form class="form-inline" action="/action_page.php">
+        <input class="form-control mr-sm-2" type="text" placeholder="Pretraži">
+        <button class="btn btn-success" type="submit">Pretraži</button>
+    </nav>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </header>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+  
+    <!-- The slideshow -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active" >
+        <img src="slike/slika1.jpg" class="mx-auto d-block" alt="Los Angeles" >
+      </div>
+      <div class="carousel-item " >
+        <img src="slike/slika 2.jpg" class="mx-auto d-block" alt="Chicago" width="1000" height="500"  >
+      </div>
+      <div class="carousel-item " >
+        <img src="slike/slika3.jpg" class="mx-auto d-block" alt="New York" width="1000" height="500"  >
+      </div>
+    </div>
+    </div>
+  
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+    <br> <br>
+    <p id="paragraf"> Mjesto savršenih okusa i odlične atmosfere. Interijer je osmišljen s mnogo ljubavi i pažnje čime je stvorena atmosfera pogodna za svaki obrok, bilo da je riječ o doručku i prvoj jutarnjoj kavi, opuštenom ručku u društvu prijatelja ili romantičnoj večeri. Pažljivo kreiran jelovnik koji pokriva različitu paletu ukusa, od pizza i tjestenine, preko ribljih i mesnih specijaliteta, do nezaboravnih slastica i širokog izbora vina, čini naš restoran idealnim mjestom za osjećaj ugode, zadovoljstva i topline!</p>
+    <p>Ukoliko želite rezervaciju to možete učiniti na <a href="#dno">dnu stranice.</a></p>
+  </div>
+  <br><br>
+  <hr>
+  <br><br>
+  <aside>
+    <h3> <a href="dno" id="dno"></a> Rezervacija 📝</h3> <br>
+   Ime: * <input type="text" placeholder="Unesite ime.." id="ime" oninput="ime()"> 
+   Prezime: * <input type="text" name="" placeholder="Unesite prezime.." id="prezime" oninput="prezime()">
+   <br> <br>
+   Vaš e-mail:* <input type="email" placeholder="Unesite mail.."  id="email" oninput="email()"> <br><br>
+   <form action="/action_page.php">
+    <div class="form-group">
+      <label for="sel1" id="sel" oninput="brojOsoba" >Odaberite broj osoba:*</label>
+      <select  class="mx-auto d-block" class="form-control"  id="sel1" name="sellist1">
+        <option>1-5</option>
+        <option>5-10</option>
+        <option>10-15</option>
+        <option>15-20</option>
+        <option>20+</option>
+      </select><br>
+      <label for="comment">Napomena:</label>
+      <textarea   class="mx-auto d-block" class="form-control" rows="5" id="comment"></textarea>
+      <br> 
+      <button type="button" class="btn btn-outline-success" id="button" onclick="Posalji()" >Pošalji</button> <br> <br>
+      <p>Na uneseni mail ćete dobiti potvrdu o rezervaciji, za više informacija možete se javiti na <a href="mailto:restoran@anna.ba">mail.</a></p>
+      
+    </aside>
+    <script>
+    function Posalji() {
+        let ime = document.getElementById("ime");
+        let prezime = document.getElementById("prezime");
+        
+
+        if (ime.value.length >= 1 && prezime.value.length >= 1 ) {
+          console.log(ime.value + " " + prezime.value )
+        }
+        else 
+        alert("Potrebno je popuniti polja označena *")
+      }
+
+          
+       
+    
+
+    </script>
+        
+  </body>
+</html>
